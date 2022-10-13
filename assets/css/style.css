@@ -8,7 +8,7 @@ body{
 }
 
 .menu{
-    background-color: white;
+    background: #144778;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +25,7 @@ body{
     display: block;
     padding: 1rem;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     position: relative;
 }
 
@@ -35,5 +35,13 @@ a{
 
 .menu-logo a{
     padding: 1rem;
-    color: black;
+    color: white;
+}
+
+.img-content{
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    left: 225px;
+    top: -10px
 }
