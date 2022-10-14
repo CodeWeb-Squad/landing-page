@@ -51,8 +51,17 @@ a{
     position: absolute;
     width: 140px;
     height: 140px;
-    left: 225px;
-    top: -10px
+    left: 240px;
+    top: 0px;
+}
+
+.lanterninhabase{
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 55px;
+    top: 41px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .text-content {
@@ -62,8 +71,9 @@ a{
 
 .home-content{
     position: relative;
-    /* top: -8rem; */
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     min-height: 100vh;
+    gap: 3rem;
+    padding-top: 5rem;
 }
