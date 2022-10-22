@@ -11,24 +11,31 @@
 
 <body>
 
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <header class="menu">
-        <h1 class="menu-logo">
-            <a href="#">CodeWeb Squad</a>
-        </h1>
-        <div class="img-content">
-            <img src="assets/img/Vector (3).png" alt="" class="lanterninha">
-            <img src="assets/img/lanterninhabase.png" alt="" class="lanterninhabase">
+        <div class="menu-content">
+            <div class="logo-content">
+                <h1 class="menu-logo" onclick="getElementById('close-menu').checked = false;">
+                    <a href="#">CodeWeb Squad</a>
+                </h1>
+            </div>
+            <div class="img-content">
+                <img src="assets/img/Vector (3).png" alt="" class="lanterninha">
+                <img src="assets/img/lanterninhabase.png" alt="" class="lanterninhabase">
+            </div>
+            <nav>
+                <ul onclick="getElementById('close-menu').checked = false;">
+                    <li class="a"><a href="#home">Intro</a></li>
+                    <li class="b"><a href="#francio">Francio</a></li>
+                    <li class="c"><a href="#">Ivna</a></li>
+                    <li class="d"><a href="#">Rael doido</a></li>
+                    <li class="e"><a href="#">Raissa</a></li>
+                    <li class="f"><a href="#">Lucas</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li class="a"><a href="#home">Intro</a></li>
-                <li class="b"><a href="#francio">Francio</a></li>
-                <li class="c"><a href="#">Ivna</a></li>
-                <li class="d"><a href="#">Rael doido</a></li>
-                <li class="e"><a href="#">Raissa</a></li>
-                <li class="f"><a href="#">Lucas</a></li>
-            </ul>
-        </nav>
     </header>
 
     <section id="home" class="home-content">
