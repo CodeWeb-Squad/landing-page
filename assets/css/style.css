@@ -19,8 +19,8 @@ body{
     right: 0;
     width: 100%;
     z-index: 1;
-    border-bottom: 0.1rem solid #ffc400;
-    border-top: 0.1rem solid #ffc400;
+    border-bottom: 0.1rem solid #0F9AFE;
+    border-top: 0.1rem solid #0F9AFE;
 
 }
 
@@ -34,7 +34,7 @@ body{
     display: block;
     padding: 1rem;
     font-size: 1.2rem;
-    color: white;
+    color: #0F9AFE;
     position: relative;
 }
 
@@ -44,7 +44,7 @@ a{
 
 .menu-logo a{
     padding: 1rem;
-    color: white;
+    color: #0F9AFE;
 }
 
 .img-content{
@@ -59,7 +59,7 @@ a{
     position: absolute;
     width: 14px;
     height: 14px;
-    left: 55px;
+    left: 72px;
     top: 41px;
 }
 
@@ -85,7 +85,7 @@ a{
     max-height:400px;
     width: auto;
     height: auto;
-    border: 0.2rem solid #ffc400;
+    border: 0.2rem solid #0F9AFE;
 }
 
 .intro-img-content{
@@ -161,3 +161,4 @@ a{
         padding-bottom: 3rem;
       }
     }
+    
