@@ -8,6 +8,17 @@ body{
 }
 p{
   line-height: 1.5;
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+
+.icon, .contact-icon{
+  width: 100px;
+  height: 100px;
 }
 .section{
   height: 100vh;
@@ -88,11 +99,17 @@ a{
 
 .intro-img-content,
 .home-text-content{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.intro-img-content,
+.home-text-content,
+.francio-img-content{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  padding: 1rem;
 }
 
 .home-text-content{
@@ -113,12 +130,36 @@ a{
   height: auto;
 }
 
-.francio-text-content{
-    color: aliceblue;
+.img-francio{
+  width: 400px;
+  box-shadow: 0px 0px 50px rgba(15, 154, 254, 0.4);
+  border-radius: 30px;
 }
-
 .francio-content{
   background-color: #0B0B0B;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 2rem;
+}
+.francio-main-content{
+  background: rgba(41, 49, 69, 0.5);
+  border: 1px solid #0F9AFE;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  position: relative;
+}
+
+.francio-intro-text a {
+  display: flex;
+  justify-content: center;
+}
+
+.carouosel-content,
+.francio-img-content{
+  position: relative;
 }
 
 .close-menu {
@@ -181,4 +222,80 @@ a{
         padding-bottom: 3rem;
       }
     }
+
+
+/*CARROSSEL*/
+
+.carouosel-content {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 20px;
+}
+
+.carouosel-content h1{
+  margin-bottom: 2rem;
+}
+
+.gallery-wrapper {
+  overflow-x: auto;
+  max-width: 500px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.arrow-left,
+.arrow-right {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  color: rgba(15, 154, 254, 0.4);
+  cursor: pointer;
+  border: none;
+  display: contents;
+  font-size: 30px;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.item {
+  width: 500px;
+  height: 400px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
+/* This is from w3schools */
+/* 
+https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery-wrapper {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
     
