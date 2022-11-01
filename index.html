@@ -8,6 +8,8 @@
     <title>CodeWeb Squad</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -71,7 +73,9 @@
         <div class="menu-spacing"></div>
         <div class="card-main-content">
             <div class="carouosel-content">
-                <button class="arrow-left control" aria-label="Previous image">◀</button>
+                <button class="arrow-left control" aria-label="Previous image">
+                    <i class='bx bxs-chevron-left'></i>
+                </button>
 
                 <div class="gallery-wrapper">
                     <div class="gallery">
@@ -111,7 +115,61 @@
                         </div>
                     </div>
                 </div>
-                <button class="arrow-right control" aria-label="Next Image">▶</button>
+                <button class="arrow-right control" aria-label="Next Image">
+                    <i class='bx bxs-chevron-right'></i>
+                </button>
+            </div>
+            <div class="card-img-content">
+                <img src="assets/img/perfil-exemplo.svg" alt="" class="img-profile">
+            </div>
+        </div>
+    </section>
+
+    <section id="israel" class="section card-section">
+        <div class="menu-spacing"></div>
+        <div class="card-main-content">
+            <div class="carouosel-content">
+                <div class="swiper mySwiper gallery-wrapper">
+                    <div class="swiper-wrapper gallery">
+                        <div class="swiper-slide item current-item card-intro-text">
+                            <h2>Israel Rodrigues</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eaque quo odit
+                                repellendus, deserunt pariatur porro in at adipisci harum maxime, amet eveniet ducimus
+                                ad praesentium perferendis iste excepturi placeat. Lorem ipsum, dolor sit amet
+                                consectetur adipisicing elit. Temporibus sequi nesciunt quam harum asperiores tempore
+                                magnam commodi debitis ipsum sit repellat tempora rem adipisci molestiae fuga suscipit
+                                impedit, repudiandae quasi?
+                            </p>
+                        </div>
+                        <div class="swiper-slide item current-item card-intro-text">
+                            <h2>Linguagens conhecidas: </h2>
+                            <img src="assets/img/languages/css.svg" alt="Logo CSS" class="icon">
+                            <img src="assets/img/languages/html.svg" alt="Logo HTML" class="icon">
+                            <img src="assets/img/languages/python.svg" alt="Logo Python" class="icon">
+                            <img src="assets/img/languages/js.svg" alt="Logo Javascript" class="icon">
+
+                            <h2> Frameworks Conhecidos:</h2>
+                            <img src="assets/img/languages/django.svg" alt="Logo Django" class="icon">
+                        </div>
+                        <div class="swiper-slide item current-item card-intro-text">
+                            <h2>Contato: </h2>
+                            <a href="HTTP://www.github.com/israelrodrigues01">
+                                <img src="assets/img/contact/github.svg" alt="Link para o Github de Francio Xavier"
+                                    class="contact-icon">
+                            </a>
+                            <a href="https://ciceroisrael428@gmail.com">
+                                <img src="assets/img/contact/email.svg" alt="" class="contact-icon">
+                            </a>
+                            <a href="https://www.linkedin.com/in/francio-xavier-a67a05227">
+                                <img src="assets/img/contact/linkedin.svg" alt="" class="contact-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
             <div class="card-img-content">
                 <img src="assets/img/perfil-exemplo.svg" alt="" class="img-profile">
@@ -120,6 +178,22 @@
     </section>
 
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

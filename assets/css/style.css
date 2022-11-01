@@ -114,7 +114,7 @@ a {
 }
 
 .content-home .content-home-image {
-  flex: 1 1 600px;
+  flex: 1 0 45rem;
 }
 
 .content-home .content-home-image img {
@@ -279,3 +279,12 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
   scrollbar-width: none;
   /* Firefox */
 }
+
+
+/* Swiper Start */
+.mySwiper
+{
+  width: 900px;
+  
+}
+/* Swiper End */
