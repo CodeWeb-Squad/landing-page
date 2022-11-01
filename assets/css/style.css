@@ -45,7 +45,7 @@ h2 {
 .menu-content {
   background: #0B0B0B;
   display: flex;
-  justify-content: space-between;
+  justify-content:space-around;
   align-items: center;
   padding: 10px 0px;
   position: fixed;
@@ -90,14 +90,6 @@ a {
   top: 0px;
 }
 
-.lanterninhabase {
-  position: absolute;
-  width: 14px;
-  height: 14px;
-  left: 72px;
-  top: 41px;
-}
-
 
 .home-content {
   position: relative;
@@ -125,15 +117,13 @@ a {
   flex: 0 1 45rem;
 }
 
-/* .content-home,
 .content-home{
 padding-left: 2rem;
 padding-right: 2rem;
 }
 
 .intro-img-content,
-.home-text-content,
-.francio-img-content{
+.home-text-content{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -151,7 +141,7 @@ margin-bottom: 3rem;
 text-transform: uppercase;
 line-height: 1.2;
 }
- */
+
 
 .intro-img-content img {
   max-width: 100%;
