@@ -1,152 +1,184 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
-    background-color: rgb(0, 0, 0);
+body {
+  background-color: rgb(0, 0, 0);
 }
-p{
+
+p {
   line-height: 1.5;
   color: white;
 }
 
-h2{
+h2 {
   color: white;
 }
 
 
-.icon, .contact-icon{
+.icon,
+.contact-icon {
   width: 100px;
   height: 100px;
 }
-.section{
+
+.section {
   height: 100vh;
 }
+
 .main-bg {
   background-image: url('../img/main-bg.svg');
   background-size: cover;
   background-position: center center;
 }
 
-.menu-spacing{
+.menu-spacing {
   height: 77px;
 }
 
-.menu-content{
-    background: #0B0B0B;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1;
-    border-bottom: 0.1rem solid #0F9AFE;
-    border-top: 0.1rem solid #0F9AFE;
+.menu-content {
+  background: #0B0B0B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+  border-bottom: 0.1rem solid #0F9AFE;
+  border-top: 0.1rem solid #0F9AFE;
 
 }
 
-.menu ul{
-    display: flex;
-    list-style: none;
-    gap: 10px;
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
 }
 
-.menu ul li a{
-    display: block;
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #0F9AFE;
-    position: relative;
+.menu ul li a {
+  display: block;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #0F9AFE;
+  position: relative;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.menu-logo a{
-    padding: 1rem;
-    color: #0F9AFE;
+.menu-logo a {
+  padding: 1rem;
+  color: #0F9AFE;
 }
 
-.img-content{
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    left: 240px;
-    top: 0px;
+.img-content {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: 240px;
+  top: 0px;
 }
 
-.lanterninhabase{
-    position: absolute;
-    width: 14px;
-    height: 14px;
-    left: 72px;
-    top: 41px;
+.lanterninhabase {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  left: 72px;
+  top: 41px;
 }
 
 
-.home-main-content{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    position: relative;
-    height: 100vh;
+.home-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
 }
 
-.intro-img-content,
-.home-text-content{
-  padding-left: 2rem;
-  padding-right: 2rem;
+.content-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.content-home .content-home-image {
+  flex: 1 1 600px;
+}
+
+.content-home .content-home-image img {
+  max-width: 100%;
+}
+
+.content-home .content-home-text {
+  flex: 0 1 45rem;
+}
+
+/* .content-home,
+.content-home{
+padding-left: 2rem;
+padding-right: 2rem;
 }
 
 .intro-img-content,
 .home-text-content,
 .francio-img-content{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column wrap;
+}
+
+.home-text-content{
+color: white;
+align-items: center;
+}
+
+.home-text-content h2{
+font-size: 3rem;
+margin-bottom: 3rem;
+text-transform: uppercase;
+line-height: 1.2;
+}
+ */
+
+.intro-img-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-img-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
 }
 
-.home-text-content{
-  color: white;
-  align-items: center;
-}
-
-.home-text-content h2{
-  font-size: 3rem;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  line-height: 1.2;
-}
-
-
-.intro-img-content img{
-  max-width: 100%;
-  height: auto;
-}
-
-.img-francio{
+.img-profile {
   width: 400px;
   box-shadow: 0px 0px 50px rgba(15, 154, 254, 0.4);
   border-radius: 30px;
 }
-.francio-content{
+
+.card-section {
   background-color: #0B0B0B;
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 2rem;
 }
-.francio-main-content{
+
+.card-main-content {
   background: rgba(41, 49, 69, 0.5);
   border: 1px solid #0F9AFE;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
@@ -157,20 +189,19 @@ a{
   position: relative;
 }
 
-.francio-intro-text a {
+.card-intro-text a {
   display: flex;
   justify-content: center;
 }
 
 .carouosel-content,
-.francio-img-content{
+.francio-img-content {
   position: relative;
 }
 
 .close-menu {
-    display: none;
-  }
-
+  display: none;
+}
 
 /*CARROSSEL*/
 
@@ -184,7 +215,7 @@ a{
   font-size: 20px;
 }
 
-.carouosel-content h2{
+.carouosel-content h2 {
   margin-bottom: 2rem;
 }
 
@@ -243,7 +274,8 @@ https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .gallery-wrapper {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
-    
