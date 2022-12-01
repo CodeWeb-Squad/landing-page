@@ -68,6 +68,8 @@ a {
   width: 100%;
   box-shadow: 0px 0px 50px rgba(15, 154, 254, 0.4);
   border-radius: 30px;
+  max-width: 435px;
+  height: auto;
 }
 
 .card-section {
