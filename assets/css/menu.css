@@ -49,3 +49,9 @@
     display: inline-block;
     position: relative;
 }
+
+.bxs-moon{
+    color: #007aff;
+    background-color: #161D29;
+    background: #161D29;
+}
