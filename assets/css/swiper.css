@@ -1,6 +1,6 @@
 /*CARROSSEL*/
 
-.carouosel-content {
+.carousel-content {
     max-width: 640px;
     margin: 0 auto;
     display: flex;
@@ -8,9 +8,10 @@
     align-items: center;
     text-align: left;
     font-size: 20px;
+    margin-left: 5rem;
 }
   
-.carouosel-content h2 {
+.carousel-content h2 {
     margin-bottom: 1rem;
 }
   
@@ -68,6 +69,6 @@
 }
   /* Swiper End */
 
-.carouosel-content {
+.carousel-content {
     position: relative;
 }
