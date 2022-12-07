@@ -60,3 +60,113 @@
         flex-wrap: wrap;
     }
 }
+
+@media (max-width: 1235px){
+    html{
+        scroll-padding-top: 3.5rem;
+    }
+    .card-main-content{
+        flex-direction: column;
+        width: 100%;
+        height: 800px;
+        justify-content: space-between;
+        padding-bottom: 2rem;
+    }
+
+    .carousel-content{
+        margin-left: 0 !important;
+    }
+
+    .section{
+        height: 120vh;
+        max-height: 120vh;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .img-profile{
+        left: 50%;
+        transform: translate(-25%, -50%);
+    }
+
+    @media (max-width: 650px){
+        p{
+            line-height: normal;
+        }
+
+        .item p{
+            font-size: 15px;
+        }
+
+        .item h2{
+            font-size: 20px;
+        }
+
+        .contact-icon{
+            width: 50px;
+            height: 50px;
+        }
+
+        .swiper-button-next{
+            margin-left: 2rem;
+        }
+
+        .carousel-content{
+            width: 450px;
+            height: 200px;
+        }
+        .mySwiper{
+            width: 500px;
+        }
+
+        .swiper-slide .icon{
+            width: 50px;
+            height: 50px;
+            max-width: 50px;
+            max-height: 50px;
+        }
+          
+        .swiper-slide .icon-1,
+        .swiper-slide .icon-2{
+            width: 50px;
+            height: 50px;
+            max-width: 50px;
+            max-height: 50px;
+            padding-left: 4rem;
+        }
+
+        .card-main-content{
+            width: 500px;
+        }
+
+        .img-intro{
+            width: 550px;
+        }
+
+        .img-profile{
+            left: 50%;
+            transform: translate(-42%, -50%);
+        }
+
+        @media (max-width: 475px){
+    
+            .carousel-content{
+                width: 375px;
+                height: 200px;
+            }
+    
+            .card-main-content{
+                width: 375px;
+            }
+    
+            .img-intro{
+                width: 350px;
+            }
+    
+            .img-profile{
+                width: 350px;
+                left: 50%;
+                transform: translate(-58%, -50%);
+            }
+        }
+    }
+}
