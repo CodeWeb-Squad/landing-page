@@ -1,12 +1,15 @@
 
 
 var a = document.getElementById('button-light');
+var close = document.getElementById('close-menu')
 
 a.addEventListener('click', lightMode)
 
 function lightMode() {
     var body = document.body;
     var home = document.getElementById('home')
+
+    close.checked = false;
 
     home.classList.toggle('light-bg')
     body.classList.toggle('light-mode')
