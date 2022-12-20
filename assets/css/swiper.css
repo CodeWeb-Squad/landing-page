@@ -20,7 +20,7 @@
 .swiper-slide{
     transition: all 600ms ease-in-out;
 }
-  
+
 .swiper-slide p,
 .swiper-slide h2{
     text-align: left;
